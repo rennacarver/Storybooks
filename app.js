@@ -13,9 +13,8 @@ connectDB()
 const app = express()
 
 //Handlebars
-app.set('view engine', '.hbs')
-app.engine('.hbs', exphbs.engine({defaultLayout: 'main', extname: '.hbs'}))
-
+app.engine('.hbs', exphbs.engine({defaultLayout: 'main', extname: '.hbs'}));
+app.set('view engine', '.hbs');
 
 //LOGGING
 if(process.env.NODE_ENV === 'development')
