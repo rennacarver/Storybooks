@@ -16,6 +16,9 @@ const app = express()
 app.engine('.hbs', exphbs.engine({defaultLayout: 'main', extname: '.hbs'}));
 app.set('view engine', '.hbs');
 
+//STATIC
+app.use(express.static('public'))
+
 //LOGGING
 if(process.env.NODE_ENV === 'development')
     app.use(morgan('dev'))
