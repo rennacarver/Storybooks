@@ -3,7 +3,7 @@ body {
 }
 
 p {
-    margin :10px 0 !important
+    margin :10px 0 !important;
 }
 
 .login-container{
@@ -14,4 +14,13 @@ p {
 
 head {
     display: none
+}
+
+.fa-small {
+    font-size: 16px !important;
+}
+
+.btn-float{
+    float: left;
+    margin-right: 10px;
 }
